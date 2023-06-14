@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const crypto = require("crypto");
-import { USER_NAME, USER_PASSWORD } from './config';
+const config = require("./config");
+const USER_NAME = config.USER_NAME;
+const USER_PASSWORD = config.USER_PASSWORD;
 // Create Express app
 const app = express();
 const Cafe = require('./models/Cafe');
